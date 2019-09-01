@@ -1,0 +1,14 @@
+{
+  "name": "ayuka",
+  "version": "1.0.0",
+  "description": "A landing page for ayukar developers",
+  "main": "index.js",
+  "scripts": {
+    "compile:scss": "node-sass -w scss/main.scss css/main.css"
+  },
+  "author": "Sumit Kumar",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^4.12.0"
+  }
+}

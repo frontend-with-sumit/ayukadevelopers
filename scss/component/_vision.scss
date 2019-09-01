@@ -1,0 +1,23 @@
+.vision {
+  width: 50%;
+  height: 15rem;
+  margin: 0 auto;
+  box-shadow: 0 3rem 6rem rgba($color-black, 0.1);
+  background-color: rgba($color-white, 0.6);
+  border-radius: 3px;
+  padding: 6rem;
+  transform: skewX(-12deg);
+  transition: all 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  & .fade {
+    animation-name: fade;
+    animation-duration: 0.5s;
+  }
+
+  & > * {
+    transform: skewX(12deg);
+  }
+}

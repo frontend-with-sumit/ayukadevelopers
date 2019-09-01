@@ -1,0 +1,15 @@
+.btn {
+  display: inline-block;
+  margin: 1rem 0;
+  padding: 1rem 2rem;
+  border-radius: 2px;
+  box-shadow: 0 0.3rem 0.6rem rgba($color-black, 0.5);
+}
+
+.btn-primary {
+  background: $color-primary;
+  transform: translateY(-2rem);
+  opacity: 0;
+  animation: animate-text-down 1s 1.2s forwards;
+  transition: 0.5s;
+}

@@ -1,0 +1,28 @@
+.section-services {
+  .card {
+    height: 40rem;
+    padding: 3rem;
+    box-shadow: 0 0.3rem 0.5rem rgba($color-black, 0.2);
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0.97);
+    transition: all 0.2s ease-out;
+    cursor: pointer;
+
+    &:hover {
+      transform: translateY(-0.5rem) scale(1);
+      box-shadow: 0 0.3rem 0.8rem rgba($color-black, 0.5);
+    }
+
+    &__image {
+      width: 20rem;
+    }
+
+    &__title {
+      padding: 2rem 0;
+    }
+  }
+}

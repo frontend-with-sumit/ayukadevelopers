@@ -1,0 +1,28 @@
+.header {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__image {
+    width: 50rem;
+
+    img {
+      height: 100%;
+      width: 100%;
+    }
+  }
+}
+
+.section-steps {
+  ul {
+    width: 60%;
+    display: inline-block;
+  }
+}
+
+.section-contact {
+  font-size: 2rem;
+  font-family: $font-secondary;
+}

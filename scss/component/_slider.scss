@@ -1,0 +1,134 @@
+.wrapper {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s;
+}
+
+.modal {
+  height: 40rem;
+  width: 100rem;
+  border-radius: 5px;
+  position: relative;
+  top: -4rem;
+
+  &__body {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+}
+
+.nav {
+  right: 4rem;
+  bottom: -4rem;
+  width: 8rem;
+  height: 4rem;
+  position: absolute;
+  box-shadow: 0 0 1.8rem 0 rgba($color-black, 0.23);
+  transform: translateY(-3rem);
+  opacity: 0;
+  animation: nav-icon-animation 0.5s 1s ease forwards;
+  transition: 0.5s;
+
+  .nav-icon {
+    width: 4rem;
+    height: 4rem;
+    position: absolute;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 1.5rem;
+  }
+
+  .prev {
+    left: 0;
+    &:hover {
+      transform: translateX(-2px);
+    }
+  }
+
+  .next {
+    right: 0;
+    &:hover {
+      transform: translateX(2px);
+    }
+  }
+}
+
+.illustration {
+  position: absolute;
+  top: 0;
+  width: 40%;
+  height: 100%;
+  overflow: hidden;
+  overflow-x: auto;
+  padding: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    height: 22rem;
+    transform: translateX(-2rem);
+    opacity: 0;
+    animation: animate-image-right 1s 0.6s forwards;
+    transition: 0.5s;
+  }
+}
+
+.content {
+  position: absolute;
+  right: 0;
+  width: 40%;
+  height: 100%;
+  padding: 3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+
+  h1 {
+    padding-top: 2rem;
+    transform: translateY(-2rem);
+    opacity: 0;
+    animation: animate-text-down 1s 0.6s forwards;
+    transition: 0.5s;
+  }
+
+  p {
+    padding: 3rem 0;
+    transform: translateY(-2rem);
+    opacity: 0;
+    animation: animate-text-down 1s 0.9s forwards;
+    transition: 0.5s;
+  }
+}
+
+.content-data,
+.illustration,
+.btn {
+  transition: 0.4s;
+}
+
+.fade-out {
+  .content-data {
+    opacity: 0;
+    transform: translateY(-2rem);
+  }
+
+  .illustration {
+    opacity: 0;
+    transform: translateX(-2rem);
+  }
+
+  .btn-primary {
+    opacity: 0;
+    transform: translateY(-2rem);
+  }
+}

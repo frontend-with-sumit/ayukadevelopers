@@ -1,0 +1,8 @@
+.client {
+  height: 15rem;
+  margin: 2rem 0;
+
+  & > img {
+    height: 100%;
+  }
+}

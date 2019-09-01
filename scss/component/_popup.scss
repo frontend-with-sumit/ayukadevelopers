@@ -1,0 +1,78 @@
+.popup {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba($color-black, 0.8);
+  z-index: 20;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s;
+
+  &:target {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  &__close {
+    &:link,
+    &:visited {
+      position: absolute;
+      top: -4rem;
+      right: -0.3rem;
+      display: inline-block;
+    }
+  }
+
+  &__content {
+    width: auto;
+    background-color: $color-white;
+    box-shadow: 0 2rem 4rem rgba($color-black, 0.2);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 3px;
+    padding: 3rem;
+  }
+
+  &__top {
+    height: 33.3333%;
+    margin: 2rem 0;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__bottom {
+    height: 25rem;
+    display: block;
+    overflow: hidden;
+    overflow-y: auto;
+
+    &--features {
+      margin-bottom: 2rem;
+    }
+
+    h2 {
+      padding-bottom: 1rem;
+    }
+
+    &::-webkit-scrollbar {
+      width: 0.5rem;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      border-radius: 5rem;
+      background-color: rgba($color-black, 0.8);
+    }
+  }
+
+  &__img {
+    display: block;
+    height: 6rem;
+  }
+}

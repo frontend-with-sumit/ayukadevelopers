@@ -1,0 +1,24 @@
+@import "abstract/variables";
+
+@import "base/animations";
+@import "base/base";
+@import "base/typography";
+
+@import "component/navbar";
+@import "component/slider";
+@import "component/btn";
+@import "component/bg-video";
+@import "component/popup";
+@import "component/vision";
+
+@import "layout/section-navbar";
+@import "layout/section-about";
+@import "layout/section-services";
+@import "layout/section-projects";
+@import "layout/section-vision";
+@import "layout/section-client";
+@import "layout/footer";
+
+@import "pages/home";
+@import "pages/common";
+@import "pages/contact";
